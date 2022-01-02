@@ -3,6 +3,31 @@ print('Суть игры - в начале раздаются карты по о
 print('\nВведите количество фишек для начала игры.')
 stacks=input('')
 
+ 
+koloda=[2,3,4,5,6,7,8,9,10,11,12,13,14]*4  
+import random
+random.shuffle(koloda)
+print('Начинаем игру')
+vsego=0
 
-
-koloda
+main()
+maind()
+class amogus:
+  @public
+  def main():  
+  now=koloda.pop()
+  print('Вам попалась карта: %d' %now)
+  vsego+=now
+  now=koloda.pop()
+  print('Вам попалась карта: %d' %now)
+  vsego+=now
+  print('У вас %d' %vsego)
+def maind(): 
+  now=koloda.pop()
+  print('Диллер раздал себе карту: %d' %now)
+  vsego+=now
+  now=koloda.pop()
+  print('Диллер вторую карту скрыл')
+  vsego+=now
+  print('У диллера %d' %vsego)    
+  
